@@ -1,10 +1,5 @@
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\CreatePDFXamarinAndroid.dll
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\CreatePDFXamarinAndroid.pdb
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid.apk
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid.aab
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.aab
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.apk
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.apk.idsig
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\build.props
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\adb.props
@@ -19,10 +14,7 @@ D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndro
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\CreatePDFXamarinAndroid.csproj.CoreCompileInputs.cache
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\CreatePDFXamarinAndroid.dll
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\CreatePDFXamarinAndroid.pdb
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.apk
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\base.zip
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.aab
-D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.apks
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\res\layout\activity_main.xml
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\res\values\colors.xml
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\res\values\ic_launcher_background.xml
@@ -433,3 +425,12 @@ D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndro
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\stamp\_AndroidXJetifyManifest.stamp
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\androidx\_AndroidXJetifyManifest.jetify
 D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\stamp\_CopyIntermediateAssemblies.stamp
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\src\com\companyname\x1\createpdfxamarinandroid\R.java
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid.apk
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid.aab
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.aab
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.apk
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\bin\Debug\com.companyname.createpdfxamarinandroid-Signed.apk.idsig
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.apk
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.aab
+D:\iSeller\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\CreatePDFXamarinAndroid\obj\Debug\120\android\bin\com.companyname.createpdfxamarinandroid.apks

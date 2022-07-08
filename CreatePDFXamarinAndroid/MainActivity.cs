@@ -48,12 +48,12 @@ namespace CreatePDFXamarinAndroid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        public void OnPermissionDenied(PermissionDeniedResponse p0)
+        public void OnPermissionDenied(PermissionDeniedResponse permissionDeniedResponse)
         {
             Toast.MakeText(this, "You must accept this permission", ToastLength.Short).Show();
         }
 
-        public void OnPermissionGranted(PermissionGrantedResponse p0)
+        public void OnPermissionGranted(PermissionGrantedResponse permissionGrantedResponse)
         {
             btn_create_pdf.Click += delegate
             {
@@ -82,54 +82,55 @@ namespace CreatePDFXamarinAndroid
                 //font setting
                 Color colorAccent = new Color(0, 153, 204, 255);
                 float fontSize = 20.0f, valueFontSize = 26.0f;
-                BaseFont fontName = BaseFont.CreateFont(Common.Common.GetFilePath(this, "roboto.ttf"),
+/*                BaseFont fontName = BaseFont.CreateFont(Common.Common.GetFilePath(this, "roboto.ttf"),
                     "UTF-8",
-                    BaseFont.EMBEDDED);
+                    BaseFont.EMBEDDED);*/
 
                 //create title of document
-                Font titleFont = new Font(fontName, 36.0f, Font.NORMAL, Color.BLACK);
-                addNewItem(document, "Order Deatils", Element.ALIGN_CENTER, titleFont);
+                //Font titleFont = new Font(fontName, 36.0f, Font.NORMAL, Color.BLACK);
+                //addNewItem(document, "Order Deatils", Element.ALIGN_CENTER, titleFont);
+                addNewItem(document, "Order Deatils", Element.ALIGN_CENTER);
 
                 // Add more
-                Font orderNumberFont = new Font(fontName, fontSize, Font.NORMAL, colorAccent);
-                addNewItem(document, "Order No:", Element.ALIGN_LEFT, orderNumberFont);
+                //Font orderNumberFont = new Font(fontName, fontSize, Font.NORMAL, colorAccent);
+                addNewItem(document, "Order No:", Element.ALIGN_LEFT);
 
-                Font orderNumberValueFont = new Font(fontName, valueFontSize, Font.NORMAL, Color.BLACK);
-                addNewItem(document, "#717171", Element.ALIGN_LEFT, orderNumberValueFont);
-
-                addLineSeperator(document);
-
-                addNewItem(document, "Order Date", Element.ALIGN_LEFT, orderNumberFont);
-                addNewItem(document, "15/06/2022", Element.ALIGN_LEFT, orderNumberValueFont);
+                //Font orderNumberValueFont = new Font(fontName, valueFontSize, Font.NORMAL, Color.BLACK);
+                addNewItem(document, "#717171", Element.ALIGN_LEFT);
 
                 addLineSeperator(document);
 
-                addNewItem(document, "Account name", Element.ALIGN_LEFT, orderNumberFont);
-                addNewItem(document, "Fero", Element.ALIGN_LEFT, orderNumberValueFont);
+                addNewItem(document, "Order Date", Element.ALIGN_LEFT);
+                addNewItem(document, "15/06/2022", Element.ALIGN_LEFT);
+
+                addLineSeperator(document);
+
+                addNewItem(document, "Account name", Element.ALIGN_LEFT);
+                addNewItem(document, "Fero", Element.ALIGN_LEFT);
 
                 addLineSeperator(document);
 
                 //Add product order detail
                 AddLineSpace(document);
-                addNewItem(document, "Product details", Element.ALIGN_CENTER, titleFont);
+                addNewItem(document, "Product details", Element.ALIGN_CENTER);
 
                 addLineSeperator(document);
 
                 //item 1
-                AddNewItemWithLeftAndRight(document, "Burger", "(1.0%)", titleFont, orderNumberValueFont);
-                AddNewItemWithLeftAndRight(document, "20", "1200.0", titleFont, orderNumberValueFont);
+                AddNewItemWithLeftAndRight(document, "Burger", "(1.0%)");
+                AddNewItemWithLeftAndRight(document, "20", "1200.0");
 
                 addLineSeperator(document);
 
                 //item 2
-                AddNewItemWithLeftAndRight(document, "Pizza", "(0.0%)", titleFont, orderNumberValueFont);
-                AddNewItemWithLeftAndRight(document, "12", "1520.0", titleFont, orderNumberValueFont);
+                AddNewItemWithLeftAndRight(document, "Pizza", "(0.0%)");
+                AddNewItemWithLeftAndRight(document, "12", "1520.0");
 
                 addLineSeperator(document);
 
                 //item 3
-                AddNewItemWithLeftAndRight(document, "Sandwich", "(0.0%)", titleFont, orderNumberValueFont);
-                AddNewItemWithLeftAndRight(document, "10", "1000.0", titleFont, orderNumberValueFont);
+                AddNewItemWithLeftAndRight(document, "Sandwich", "(0.0%)");
+                AddNewItemWithLeftAndRight(document, "10", "1000.0");
 
                 addLineSeperator(document);
 
@@ -137,7 +138,7 @@ namespace CreatePDFXamarinAndroid
                 AddLineSpace(document);
                 AddLineSpace(document);
 
-                AddNewItemWithLeftAndRight(document, "total", "8500", titleFont, orderNumberValueFont);
+                AddNewItemWithLeftAndRight(document, "total", "8500");
 
                 document.Close();
                 Toast.MakeText(this, "Sucess create PDF", ToastLength.Short).Show();
@@ -147,15 +148,15 @@ namespace CreatePDFXamarinAndroid
             }
             catch(FileNotFoundException e)
             {
-                Log.Debug("", "" + e.Message);
+                Log.Debug("author", "" + e.Message);
             }
             catch (DocumentException e)
             {
-                Log.Debug("", "" + e.Message);
+                Log.Debug("author", "" + e.Message);
             }
             catch (IOException e)
             {
-                Log.Debug("", "" + e.Message);
+                Log.Debug("author", "" + e.Message);
             }
         }
 
@@ -173,10 +174,10 @@ namespace CreatePDFXamarinAndroid
             }
         }
 
-        private void AddNewItemWithLeftAndRight(Document document, string leftText, string rightText, Font leftFont, Font rightFont)
+        private void AddNewItemWithLeftAndRight(Document document, string leftText, string rightText)
         {
-            Chunk chunkTextLeft = new Chunk(leftText, leftFont);
-            Chunk chunkTextRight = new Chunk(rightText, rightFont);
+            Chunk chunkTextLeft = new Chunk(leftText);
+            Chunk chunkTextRight = new Chunk(rightText);
             Paragraph p = new Paragraph(chunkTextLeft);
             p.Add(new Chunk(new VerticalPositionMark()));
             p.Add(chunkTextRight);
@@ -197,9 +198,9 @@ namespace CreatePDFXamarinAndroid
             document.Add(new Paragraph(""));
         }
 
-        private void addNewItem(Document document, string text, int align, Font font)
+        private void addNewItem(Document document, string text, int align)
         {
-            Chunk chunk = new Chunk(text, font);
+            Chunk chunk = new Chunk(text);
             Paragraph paragraph = new Paragraph(chunk);
             paragraph.Alignment = align;
             document.Add(paragraph);
