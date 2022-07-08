@@ -81,21 +81,12 @@ namespace CreatePDFXamarinAndroid
 
                 //font setting
                 Color colorAccent = new Color(0, 153, 204, 255);
-                float fontSize = 20.0f, valueFontSize = 26.0f;
-/*                BaseFont fontName = BaseFont.CreateFont(Common.Common.GetFilePath(this, "roboto.ttf"),
-                    "UTF-8",
-                    BaseFont.EMBEDDED);*/
 
-                //create title of document
-                //Font titleFont = new Font(fontName, 36.0f, Font.NORMAL, Color.BLACK);
-                //addNewItem(document, "Order Deatils", Element.ALIGN_CENTER, titleFont);
                 addNewItem(document, "Order Deatils", Element.ALIGN_CENTER);
 
                 // Add more
-                //Font orderNumberFont = new Font(fontName, fontSize, Font.NORMAL, colorAccent);
                 addNewItem(document, "Order No:", Element.ALIGN_LEFT);
 
-                //Font orderNumberValueFont = new Font(fontName, valueFontSize, Font.NORMAL, Color.BLACK);
                 addNewItem(document, "#717171", Element.ALIGN_LEFT);
 
                 addLineSeperator(document);
